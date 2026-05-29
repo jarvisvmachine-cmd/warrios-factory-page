@@ -1,5 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Instagram, Facebook, Youtube } from "lucide-react";
+import logo from "@/assets/warriors-logo.png";
 
 export function Footer() {
   return (
@@ -7,10 +8,12 @@ export function Footer() {
       <div className="container mx-auto px-4 md:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           <div className="md:col-span-2">
-            <h3 className="font-display text-3xl tracking-[0.25em] flex items-center gap-2">
-              <span className="inline-block w-2 h-2 rounded-full bg-accent" />
-              WARRIORS<span className="text-foreground/40">FACTORY</span>
-            </h3>
+            <div className="flex items-center gap-3">
+              <img src={logo} alt="Warriors Factory" className="h-12 w-auto" />
+              <h3 className="font-display text-3xl tracking-[0.25em]">
+                WARRIORS<span className="text-foreground/40">FACTORY</span>
+              </h3>
+            </div>
             <p className="mt-4 text-muted-foreground max-w-sm">
               Equipamiento técnico para guerreros del tatami. Forjado por practicantes, probado en competición.
             </p>
