@@ -82,11 +82,15 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "Warriors Factory — Kimonos y equipamiento de Brazilian Jiu-Jitsu" },
       { name: "description", content: "Kimonos de BJJ, rashguards, shorts de lucha y equipamiento técnico para guerreros del tatami." },
-      { property: "og:title", content: "Warriors Factory — Equipamiento BJJ" },
-      { property: "og:description", content: "Kimonos, rashguards y shorts de lucha de alto rendimiento." },
+      { property: "og:title", content: "Warriors Factory — Kimonos y equipamiento de Brazilian Jiu-Jitsu" },
+      { property: "og:description", content: "Kimonos de BJJ, rashguards, shorts de lucha y equipamiento técnico para guerreros del tatami." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Warriors Factory — Kimonos y equipamiento de Brazilian Jiu-Jitsu" },
+      { name: "twitter:description", content: "Kimonos de BJJ, rashguards, shorts de lucha y equipamiento técnico para guerreros del tatami." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/2f3a0c25-cbe5-4b81-8c25-635b21f6d1fd/id-preview-73130ed6--87056ec1-8c5a-40ad-9838-187eb5129e22.lovable.app-1780079797423.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/2f3a0c25-cbe5-4b81-8c25-635b21f6d1fd/id-preview-73130ed6--87056ec1-8c5a-40ad-9838-187eb5129e22.lovable.app-1780079797423.png" },
     ],
     links: [
       {
