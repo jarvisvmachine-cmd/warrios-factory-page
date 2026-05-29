@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Truck, ShieldCheck, Repeat, Award } from "lucide-react";
 import heroImg from "@/assets/hero-bjj.jpg";
 import athleteImg from "@/assets/brand-athlete.jpg";
+import logo from "@/assets/warriors-logo.png";
 import catGi from "@/assets/cat-gi.jpg";
 import catRash from "@/assets/cat-rashguard.jpg";
 import catShorts from "@/assets/cat-shorts.jpg";
@@ -29,11 +30,12 @@ function Index() {
       <section className="relative overflow-hidden bg-card">
         <div className="container mx-auto px-4 md:px-8 pt-12 md:pt-20 pb-16 md:pb-24 grid md:grid-cols-12 gap-10 md:gap-12 items-center">
           <div className="md:col-span-6 lg:col-span-5 order-2 md:order-1">
-            <div className="flex items-center gap-3 mb-6">
-              <span className="h-px w-10 bg-accent" />
-              <p className="text-[11px] uppercase tracking-[0.3em] text-muted-foreground">
-                Colección 2026
-              </p>
+            <div className="flex items-center gap-4 mb-8">
+              <img src={logo} alt="Warriors Factory" className="h-14 w-auto" />
+              <div>
+                <p className="font-display text-lg tracking-[0.3em] leading-none text-foreground">WARRIORS FACTORY</p>
+                <p className="text-[10px] uppercase tracking-[0.4em] text-muted-foreground mt-1.5">Colección 2026</p>
+              </div>
             </div>
             <h1 className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-[5.5rem] leading-[0.9] tracking-tight text-foreground">
               LA MEJOR ARMADURA
@@ -74,6 +76,12 @@ function Index() {
               <div className="absolute top-5 left-5 bg-background/95 backdrop-blur px-3 py-1.5 text-[10px] uppercase tracking-[0.25em] rounded-sm border border-border">
                 Nuevo
               </div>
+              <img
+                src={logo}
+                alt=""
+                aria-hidden="true"
+                className="absolute bottom-5 right-5 h-16 w-auto opacity-90 drop-shadow-[0_4px_12px_rgba(0,0,0,0.35)]"
+              />
             </div>
           </div>
         </div>
