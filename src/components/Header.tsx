@@ -7,9 +7,14 @@ export function Header() {
     <header className="sticky top-0 z-40 w-full border-b border-border bg-background/90 backdrop-blur-md">
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-8">
         <Link to="/" className="flex items-center gap-3 group">
-          <img src={logo} alt="Warriors Factory" className="h-10 md:h-12 w-auto transition-transform group-hover:scale-105" />
-          <span className="font-display text-2xl md:text-3xl tracking-[0.25em] text-foreground hidden sm:inline">
-            WARRIORS<span className="text-foreground/40">FACTORY</span>
+          <img
+            src={logo}
+            alt="Warriors Factory"
+            className="h-11 md:h-12 w-auto transition-transform duration-500 group-hover:rotate-[-6deg]"
+          />
+          <span className="font-display text-xl md:text-2xl tracking-[0.3em] leading-none text-foreground hidden sm:inline">
+            WARRIORS
+            <span className="block text-[10px] tracking-[0.5em] text-muted-foreground mt-1">FACTORY</span>
           </span>
         </Link>
 
