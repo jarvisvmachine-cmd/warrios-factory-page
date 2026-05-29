@@ -63,28 +63,29 @@
 
 :root {
   --radius: 0.25rem;
-  /* Premium dark combat aesthetic */
-  --background: oklch(0.14 0.005 270);
-  --foreground: oklch(0.97 0.005 90);
-  --card: oklch(0.18 0.006 270);
-  --card-foreground: oklch(0.97 0.005 90);
-  --popover: oklch(0.16 0.006 270);
-  --popover-foreground: oklch(0.97 0.005 90);
-  --primary: oklch(0.72 0.17 55); /* warm amber-gold belt accent */
-  --primary-foreground: oklch(0.14 0.005 270);
-  --secondary: oklch(0.22 0.006 270);
-  --secondary-foreground: oklch(0.97 0.005 90);
-  --muted: oklch(0.22 0.006 270);
-  --muted-foreground: oklch(0.65 0.01 90);
-  --accent: oklch(0.55 0.22 25); /* deep red — fight blood */
-  --accent-foreground: oklch(0.97 0.005 90);
+  /* Premium light combat brand */
+  --background: oklch(0.99 0.002 90);            /* near-white */
+  --foreground: oklch(0.18 0.01 270);            /* near-black ink */
+  --card: oklch(0.97 0.003 90);                  /* soft sand */
+  --card-foreground: oklch(0.18 0.01 270);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.18 0.01 270);
+  --primary: oklch(0.22 0.01 270);               /* charcoal — primary action */
+  --primary-foreground: oklch(0.99 0.002 90);
+  --secondary: oklch(0.94 0.005 90);
+  --secondary-foreground: oklch(0.18 0.01 270);
+  --muted: oklch(0.95 0.005 90);
+  --muted-foreground: oklch(0.45 0.01 270);
+  --accent: oklch(0.55 0.22 25);                 /* controlled red */
+  --accent-foreground: oklch(0.99 0.002 90);
+  --gold: oklch(0.72 0.13 75);                   /* refined gold */
   --destructive: oklch(0.55 0.22 25);
-  --destructive-foreground: oklch(0.97 0.005 90);
-  --border: oklch(0.27 0.008 270);
-  --input: oklch(0.27 0.008 270);
-  --ring: oklch(0.72 0.17 55);
-  --gradient-hero: linear-gradient(135deg, oklch(0.14 0.005 270) 0%, oklch(0.18 0.01 30) 100%);
-  --shadow-glow: 0 20px 60px -20px oklch(0.72 0.17 55 / 0.3);
+  --destructive-foreground: oklch(0.99 0.002 90);
+  --border: oklch(0.9 0.005 90);
+  --input: oklch(0.9 0.005 90);
+  --ring: oklch(0.22 0.01 270);
+  --shadow-elegant: 0 30px 60px -30px oklch(0.18 0.01 270 / 0.18);
+  --shadow-card: 0 1px 2px oklch(0.18 0.01 270 / 0.04), 0 12px 30px -12px oklch(0.18 0.01 270 / 0.08);
   --font-display: "Bebas Neue", "Archivo Black", sans-serif;
   --font-body: "Inter", system-ui, sans-serif;
   --chart-1: oklch(0.646 0.222 41.116);
