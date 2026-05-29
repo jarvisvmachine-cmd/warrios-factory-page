@@ -74,9 +74,6 @@ function Index() {
               <div className="absolute top-5 left-5 bg-background/95 backdrop-blur px-3 py-1.5 text-[10px] uppercase tracking-[0.25em] rounded-sm border border-border">
                 Nuevo
               </div>
-              <div className="absolute bottom-5 right-5 bg-foreground text-background px-4 py-2 text-xs uppercase tracking-[0.2em] rounded-sm">
-                Gi Pearl Weave 450gsm
-              </div>
             </div>
           </div>
         </div>
