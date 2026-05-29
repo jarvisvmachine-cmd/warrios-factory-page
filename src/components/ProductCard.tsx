@@ -30,39 +30,39 @@ export function ProductCard({ product }: { product: ShopifyProduct }) {
       params={{ handle: product.node.handle }}
       className="group block"
     >
-      <div className="relative aspect-[4/5] overflow-hidden bg-secondary rounded-sm">
+      <div className="relative aspect-[4/5] overflow-hidden bg-card rounded-md border border-border/60">
         {image ? (
           <img
             src={image.url}
             alt={image.altText || product.node.title}
             loading="lazy"
-            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+            className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
           />
         ) : (
           <div className="w-full h-full flex items-center justify-center text-muted-foreground text-xs uppercase tracking-widest">
             Sin imagen
           </div>
         )}
-        <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-        <Button
-          onClick={handleAdd}
-          disabled={isLoading || !variant}
-          size="icon"
-          className="absolute bottom-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity bg-primary text-primary-foreground hover:bg-primary/90 rounded-full"
-        >
-          {isLoading ? <Loader2 className="h-4 w-4 animate-spin" /> : <Plus className="h-4 w-4" />}
-        </Button>
+        <div className="absolute inset-x-3 bottom-3 translate-y-2 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+          <Button
+            onClick={handleAdd}
+            disabled={isLoading || !variant}
+            className="w-full bg-foreground text-background hover:bg-foreground/90 uppercase tracking-[0.2em] text-xs rounded-sm h-10"
+          >
+            {isLoading ? <Loader2 className="h-4 w-4 animate-spin" /> : (<><Plus className="h-4 w-4 mr-2" /> Añadir</>)}
+          </Button>
+        </div>
       </div>
-      <div className="mt-4 flex justify-between items-start gap-2">
-        <div>
+      <div className="mt-5 flex justify-between items-start gap-3">
+        <div className="min-w-0">
           {product.node.productType && (
-            <p className="text-[10px] uppercase tracking-[0.2em] text-primary mb-1">
+            <p className="text-[10px] uppercase tracking-[0.25em] text-muted-foreground mb-1.5">
               {product.node.productType}
             </p>
           )}
-          <h3 className="text-sm font-medium leading-tight">{product.node.title}</h3>
+          <h3 className="text-sm font-semibold leading-tight text-foreground truncate">{product.node.title}</h3>
         </div>
-        <p className="text-sm font-display tracking-wider whitespace-nowrap">
+        <p className="text-sm font-semibold tracking-tight whitespace-nowrap text-foreground">
           {parseFloat(price.amount).toFixed(2)} {price.currencyCode}
         </p>
       </div>
