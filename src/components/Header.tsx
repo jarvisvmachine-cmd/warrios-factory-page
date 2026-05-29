@@ -1,13 +1,14 @@
 import { Link } from "@tanstack/react-router";
 import { CartDrawer } from "./CartDrawer";
+import logo from "@/assets/warriors-logo.png";
 
 export function Header() {
   return (
     <header className="sticky top-0 z-40 w-full border-b border-border bg-background/90 backdrop-blur-md">
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-8">
-        <Link to="/" className="flex items-center gap-2 group">
-          <span className="inline-block w-2.5 h-2.5 rounded-full bg-accent group-hover:scale-125 transition-transform" />
-          <span className="font-display text-2xl md:text-3xl tracking-[0.25em] text-foreground">
+        <Link to="/" className="flex items-center gap-3 group">
+          <img src={logo} alt="Warriors Factory" className="h-10 md:h-12 w-auto transition-transform group-hover:scale-105" />
+          <span className="font-display text-2xl md:text-3xl tracking-[0.25em] text-foreground hidden sm:inline">
             WARRIORS<span className="text-foreground/40">FACTORY</span>
           </span>
         </Link>
