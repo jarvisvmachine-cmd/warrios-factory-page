@@ -80,9 +80,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "RoninBJJ — Kimonos y equipamiento de Brazilian Jiu-Jitsu" },
+      { title: "Warriors Factory — Kimonos y equipamiento de Brazilian Jiu-Jitsu" },
       { name: "description", content: "Kimonos de BJJ, rashguards, shorts de lucha y equipamiento técnico para guerreros del tatami." },
-      { property: "og:title", content: "RoninBJJ — Equipamiento BJJ" },
+      { property: "og:title", content: "Warriors Factory — Equipamiento BJJ" },
       { property: "og:description", content: "Kimonos, rashguards y shorts de lucha de alto rendimiento." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },

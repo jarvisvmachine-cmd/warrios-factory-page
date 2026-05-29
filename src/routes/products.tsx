@@ -4,9 +4,9 @@ import { ProductGrid } from "@/components/ProductGrid";
 export const Route = createFileRoute("/products")({
   head: () => ({
     meta: [
-      { title: "Tienda — RoninBJJ" },
+      { title: "Tienda — Warriors Factory" },
       { name: "description", content: "Kimonos, rashguards, shorts y accesorios de Brazilian Jiu-Jitsu." },
-      { property: "og:title", content: "Tienda — RoninBJJ" },
+      { property: "og:title", content: "Tienda — Warriors Factory" },
       { property: "og:description", content: "Equipamiento técnico de BJJ." },
     ],
   }),

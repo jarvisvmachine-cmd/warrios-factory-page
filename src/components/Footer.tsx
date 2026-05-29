@@ -9,7 +9,7 @@ export function Footer() {
           <div className="md:col-span-2">
             <h3 className="font-display text-3xl tracking-[0.25em] flex items-center gap-2">
               <span className="inline-block w-2 h-2 rounded-full bg-accent" />
-              RONIN<span className="text-foreground/40">BJJ</span>
+              WARRIORS<span className="text-foreground/40">FACTORY</span>
             </h3>
             <p className="mt-4 text-muted-foreground max-w-sm">
               Equipamiento técnico para guerreros del tatami. Forjado por practicantes, probado en competición.
@@ -43,7 +43,7 @@ export function Footer() {
         </div>
 
         <div className="mt-12 pt-8 border-t border-border text-xs text-muted-foreground flex justify-between">
-          <span>© {new Date().getFullYear()} RoninBJJ. Todos los derechos reservados.</span>
+          <span>© {new Date().getFullYear()} Warriors Factory. Todos los derechos reservados.</span>
           <span className="uppercase tracking-widest">Oss.</span>
         </div>
       </div>
