@@ -183,19 +183,19 @@ function Index() {
           <div className="md:col-span-7">
             <p className="text-[11px] uppercase tracking-[0.3em] text-muted-foreground mb-4">Nuestra filosofía</p>
             <h2 className="font-display text-4xl md:text-6xl tracking-wider leading-[0.95] text-foreground">
-              MENOS ATAJOS.
+              HECHO PARA EL TATAMI.
               <br />
-              MÁS <span className="text-accent">TÉCNICA</span>.
+              LISTO PARA <span className="text-accent">COMPETIR</span>.
             </h2>
             <div className="mt-8 space-y-5 text-muted-foreground leading-relaxed max-w-xl">
               <p>
-                Cada gi nace de lo que se nota en un combate: tejido pearl weave de 450gsm,
-                refuerzos en las zonas de agarre y paneles pensados para moverte sin pelearte
+                Cada gi está pensado para lo que pasa de verdad en un combate: tejido pearl weave
+                de 450gsm, refuerzos en las zonas de agarre y un corte que deja moverte sin pelearte
                 con tu propio kimono.
               </p>
               <p>
-                No va de parecer luchador en una foto. Va de tener material que responda cuando
-                estás cansado, sudado y aún queda otra ronda.
+                No va de parecer preparado en una foto. Va de llevar material que aguanta cuando
+                estás cansado, sudado y todavía queda otra ronda.
               </p>
             </div>
 
