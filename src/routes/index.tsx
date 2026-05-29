@@ -13,9 +13,9 @@ import { ProductGrid } from "@/components/ProductGrid";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "RoninBJJ — Kimonos & equipamiento de Brazilian Jiu-Jitsu" },
+      { title: "Warriors Factory — Kimonos & equipamiento de Brazilian Jiu-Jitsu" },
       { name: "description", content: "Kimonos BJJ, rashguards, shorts de lucha y equipamiento técnico de alto rendimiento." },
-      { property: "og:title", content: "RoninBJJ — Equipamiento BJJ" },
+      { property: "og:title", content: "Warriors Factory — Equipamiento BJJ" },
       { property: "og:description", content: "Forjado para el tatami." },
     ],
   }),

@@ -4,10 +4,10 @@ import { Mail, Instagram, MapPin } from "lucide-react";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contacto — RoninBJJ" },
-      { name: "description", content: "Contacta con el equipo de RoninBJJ. Pedidos, dudas técnicas y patrocinios." },
-      { property: "og:title", content: "Contacto — RoninBJJ" },
-      { property: "og:description", content: "Habla con el equipo de RoninBJJ." },
+      { title: "Contacto — Warriors Factory" },
+      { name: "description", content: "Contacta con el equipo de Warriors Factory. Pedidos, dudas técnicas y patrocinios." },
+      { property: "og:title", content: "Contacto — Warriors Factory" },
+      { property: "og:description", content: "Habla con el equipo de Warriors Factory." },
     ],
   }),
   component: Contact,
@@ -29,12 +29,12 @@ function Contact() {
         <div className="p-6 bg-card border border-border rounded-sm">
           <Mail className="h-5 w-5 text-primary mb-3" />
           <p className="text-xs uppercase tracking-widest text-muted-foreground mb-1">Email</p>
-          <a href="mailto:info@roninbjj.com" className="text-sm hover:text-primary">info@roninbjj.com</a>
+          <a href="mailto:info@warriorsfactory.com" className="text-sm hover:text-primary">info@warriorsfactory.com</a>
         </div>
         <div className="p-6 bg-card border border-border rounded-sm">
           <Instagram className="h-5 w-5 text-primary mb-3" />
           <p className="text-xs uppercase tracking-widest text-muted-foreground mb-1">Instagram</p>
-          <a href="#" className="text-sm hover:text-primary">@roninbjj</a>
+          <a href="#" className="text-sm hover:text-primary">@warriorsfactory</a>
         </div>
         <div className="p-6 bg-card border border-border rounded-sm">
           <MapPin className="h-5 w-5 text-primary mb-3" />

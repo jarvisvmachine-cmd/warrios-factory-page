@@ -8,7 +8,7 @@ export function Header() {
         <Link to="/" className="flex items-center gap-2 group">
           <span className="inline-block w-2.5 h-2.5 rounded-full bg-accent group-hover:scale-125 transition-transform" />
           <span className="font-display text-2xl md:text-3xl tracking-[0.25em] text-foreground">
-            RONIN<span className="text-foreground/40">BJJ</span>
+            WARRIORS<span className="text-foreground/40">FACTORY</span>
           </span>
         </Link>
 
