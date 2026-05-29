@@ -15,9 +15,9 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "Warriors Factory — Kimonos & equipamiento de Brazilian Jiu-Jitsu" },
-      { name: "description", content: "Kimonos BJJ, rashguards, shorts de lucha y equipamiento técnico de alto rendimiento." },
+      { name: "description", content: "Kimonos BJJ, rashguards, shorts y equipamiento técnico probado en entrenamiento duro y competición." },
       { property: "og:title", content: "Warriors Factory — Equipamiento BJJ" },
-      { property: "og:description", content: "Forjado para el tatami." },
+      { property: "og:description", content: "Equipamiento de Brazilian Jiu-Jitsu probado para entrenar, competir y volver al tatami al día siguiente." },
     ],
   }),
   component: Index,
@@ -43,8 +43,8 @@ function Index() {
               PARA EL <span className="text-accent">COMBATE</span>.
             </h1>
             <p className="mt-8 text-base md:text-lg text-muted-foreground max-w-md leading-relaxed">
-              Kimonos, rashguards y shorts diseñados con la precisión que exige el tatami.
-              Materiales premium. Cortes anatómicos. Hecho para entrenar duro.
+              Kimonos, rashguards y shorts pensados para entrenar duro, competir y aguantar lavados, agarres
+              y rounds de verdad. Materiales serios, ajuste cómodo y estética limpia.
             </p>
             <div className="mt-10 flex flex-wrap gap-3">
               <Button asChild size="lg" className="bg-foreground text-background hover:bg-foreground/90 uppercase tracking-[0.2em] text-xs rounded-sm h-12 px-8">
@@ -58,7 +58,7 @@ function Index() {
             </div>
 
             <div className="mt-12 flex items-center gap-8 text-xs text-muted-foreground">
-              <div className="flex items-center gap-2"><ShieldCheck className="h-4 w-4" /> Calidad pro</div>
+              <div className="flex items-center gap-2"><ShieldCheck className="h-4 w-4" /> Probado en tatami</div>
               <div className="flex items-center gap-2"><Truck className="h-4 w-4" /> Envío 48h</div>
               <div className="flex items-center gap-2"><Repeat className="h-4 w-4" /> 30 días</div>
             </div>
@@ -69,8 +69,8 @@ function Index() {
               <img
                 src={heroImg}
                 alt="Kimono BJJ blanco con cinturón negro"
-                width={1920}
-                height={1280}
+                width={1254}
+                height={1254}
                 className="absolute inset-0 h-full w-full object-cover"
               />
               <div className="absolute top-5 left-5 bg-background/95 backdrop-blur px-3 py-1.5 text-[10px] uppercase tracking-[0.25em] rounded-sm border border-border">
@@ -189,24 +189,24 @@ function Index() {
             </h2>
             <div className="mt-8 space-y-5 text-muted-foreground leading-relaxed max-w-xl">
               <p>
-                Cada gi nace de la observación obsesiva: tejidos pearl weave de 450gsm,
-                costuras reforzadas en triple puntada y paneles anatómicos que dan libertad
-                total en la guardia.
+                Cada gi nace de lo que se nota en un combate: tejido pearl weave de 450gsm,
+                refuerzos en las zonas de agarre y paneles pensados para moverte sin pelearte
+                con tu propio kimono.
               </p>
               <p>
-                No vendemos ropa. Forjamos herramientas para artistas marciales que
-                entienden que la técnica vale tanto como el material que la sostiene.
+                No va de parecer luchador en una foto. Va de tener material que responda cuando
+                estás cansado, sudado y aún queda otra ronda.
               </p>
             </div>
 
             <div className="mt-10 grid grid-cols-3 gap-6 max-w-lg">
               <div>
                 <p className="font-display text-3xl md:text-4xl text-foreground">10+</p>
-                <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground mt-1">Años en el tatami</p>
+                <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground mt-1">Diseñado desde el tatami</p>
               </div>
               <div>
-                <p className="font-display text-3xl md:text-4xl text-foreground">5K</p>
-                <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground mt-1">Atletas activos</p>
+                <p className="font-display text-3xl md:text-4xl text-foreground">IBJJF</p>
+                <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground mt-1">Cortes de competición</p>
               </div>
               <div>
                 <p className="font-display text-3xl md:text-4xl text-foreground">450</p>
@@ -223,10 +223,11 @@ function Index() {
           <div className="md:col-span-8">
             <p className="text-[11px] uppercase tracking-[0.3em] text-background/60 mb-3">Únete al dojo</p>
             <h2 className="font-display text-4xl md:text-5xl tracking-wider leading-tight">
-              EQUÍPATE COMO LOS QUE COMPITEN.
+              EQUÍPATE PARA ENTRENAR COMO COMPITES.
             </h2>
             <p className="mt-4 text-background/70 max-w-xl">
-              Suscríbete y recibe un 10% en tu primer pedido, además de acceso anticipado a nuevos lanzamientos.
+              Piezas técnicas para BJJ, grappling y entrenamiento diario. Sin adornos inútiles:
+              ajuste, resistencia y presencia.
             </p>
           </div>
           <div className="md:col-span-4 flex md:justify-end">

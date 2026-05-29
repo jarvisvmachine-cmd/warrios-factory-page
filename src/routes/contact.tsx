@@ -5,7 +5,7 @@ export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
       { title: "Contacto — Warriors Factory" },
-      { name: "description", content: "Contacta con el equipo de Warriors Factory. Pedidos, dudas técnicas y patrocinios." },
+      { name: "description", content: "Contacta con Warriors Factory para pedidos, tallaje, cambios y propuestas de colaboración." },
       { property: "og:title", content: "Contacto — Warriors Factory" },
       { property: "og:description", content: "Habla con el equipo de Warriors Factory." },
     ],
@@ -21,8 +21,8 @@ function Contact() {
         HABLEMOS.
       </h1>
       <p className="mt-6 text-muted-foreground text-lg max-w-xl">
-        Para pedidos, devoluciones, dudas técnicas sobre tallaje o propuestas de patrocinio.
-        Respondemos en menos de 24 horas.
+        Para pedidos, cambios, dudas de tallaje o propuestas de colaboración. Si estás entre dos tallas,
+        dinos altura, peso y uso principal: entrenamiento diario o competición.
       </p>
 
       <div className="mt-12 grid sm:grid-cols-3 gap-6">

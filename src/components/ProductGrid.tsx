@@ -24,10 +24,10 @@ export function ProductGrid({ first = 12, query }: { first?: number; query?: str
     return (
       <div className="text-center py-24 border border-dashed border-border rounded-sm">
         <p className="font-display text-2xl tracking-wider text-muted-foreground">
-          NO HAY PRODUCTOS AÚN
+          PRODUCTOS EN PREPARACIÓN
         </p>
         <p className="text-sm text-muted-foreground mt-2">
-          Dile al chat qué producto crear y su precio para añadirlo a la tienda.
+          Estamos cargando el catálogo técnico. Vuelve en breve o escríbenos para consultar disponibilidad.
         </p>
       </div>
     );

@@ -15,7 +15,7 @@ export function Footer() {
               </h3>
             </div>
             <p className="mt-4 text-muted-foreground max-w-sm">
-              Equipamiento técnico para guerreros del tatami. Forjado por practicantes, probado en competición.
+              Equipamiento técnico para BJJ y grappling. Diseñado desde el tatami, probado en entrenamiento duro.
             </p>
             <div className="flex gap-4 mt-6">
               <a href="#" aria-label="Instagram" className="text-muted-foreground hover:text-foreground transition-colors"><Instagram className="h-5 w-5" /></a>

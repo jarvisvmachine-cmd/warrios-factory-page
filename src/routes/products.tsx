@@ -5,9 +5,9 @@ export const Route = createFileRoute("/products")({
   head: () => ({
     meta: [
       { title: "Tienda — Warriors Factory" },
-      { name: "description", content: "Kimonos, rashguards, shorts y accesorios de Brazilian Jiu-Jitsu." },
+      { name: "description", content: "Kimonos, rashguards, shorts y accesorios de Brazilian Jiu-Jitsu para entrenamiento y competición." },
       { property: "og:title", content: "Tienda — Warriors Factory" },
-      { property: "og:description", content: "Equipamiento técnico de BJJ." },
+      { property: "og:description", content: "Equipamiento técnico de BJJ para entrenar duro y competir con confianza." },
     ],
   }),
   component: Products,
@@ -20,7 +20,7 @@ function Products() {
         <p className="text-xs uppercase tracking-[0.3em] text-primary mb-4">Catálogo completo</p>
         <h1 className="font-display text-5xl md:text-7xl tracking-wider">TIENDA</h1>
         <p className="mt-4 text-muted-foreground">
-          Todo nuestro arsenal: kimonos, rashguards, shorts de lucha y accesorios.
+          Kimonos, rashguards, shorts de lucha y accesorios seleccionados para entrenar fuerte, competir y repetir mañana.
         </p>
       </div>
       <ProductGrid first={50} />

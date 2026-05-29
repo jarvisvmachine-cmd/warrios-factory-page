@@ -4,7 +4,7 @@ export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
       { title: "Nuestra historia — Warriors Factory" },
-      { name: "description", content: "La filosofía detrás de Warriors Factory: equipamiento técnico forjado por practicantes." },
+      { name: "description", content: "La filosofía detrás de Warriors Factory: equipamiento técnico de BJJ probado desde el tatami." },
       { property: "og:title", content: "Nuestra historia — Warriors Factory" },
       { property: "og:description", content: "Equipamiento BJJ creado por y para guerreros del tatami." },
     ],
@@ -21,18 +21,18 @@ function About() {
       </h1>
       <div className="mt-12 space-y-6 text-lg text-muted-foreground leading-relaxed">
         <p>
-          Warriors Factory nació en el tatami, entre rondas de sparring y conversaciones después del entrenamiento.
-          Estábamos cansados de gis que se rompían en el primer torneo, de rashguards que perdían el color
-          después de tres lavados, de shorts que no aguantaban una guardia profunda.
+          Warriors Factory nace de una idea simple: el material de lucha tiene que aguantar la vida real
+          del tatami. Agarres fuertes, lavados constantes, rounds largos y días en los que entrenas aunque
+          el cuerpo no negocie.
         </p>
         <p>
-          Empezamos diseñando para nosotros. Para nuestros compañeros. Para los faixas que entrenan a las
-          06:00 antes de ir a trabajar y para los competidores que viven de cada submission.
+          Diseñamos para gente que entrena de verdad: los que llegan a las 06:00 antes de trabajar, los que
+          preparan competición y los que quieren un gi que no moleste cuando la técnica empieza a pesar.
         </p>
         <p>
-          Hoy fabricamos equipamiento técnico que sobrevive a la temporada IBJJF completa: pearl weave de
-          competición, costuras reforzadas con triple puntada, paneles anatómicos cortados para el cuerpo
-          de un grappler. Cada pieza la probamos antes de que llegue a tu bolsa.
+          Trabajamos con tejidos pearl weave, refuerzos donde el rival tira de verdad y cortes pensados para
+          BJJ. La referencia es clara: piezas aptas para entrenar fuerte y con medidas orientadas a competición
+          IBJJF cuando el producto lo indique.
         </p>
         <p className="text-foreground italic">
           Porque tu técnica merece equipamiento que esté a la altura.
