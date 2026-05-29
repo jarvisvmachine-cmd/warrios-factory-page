@@ -36,9 +36,9 @@ function Index() {
               </p>
             </div>
             <h1 className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-[5.5rem] leading-[0.9] tracking-tight text-foreground">
-              EL ARTE
+              LA MEJOR ARMADURA
               <br />
-              DE LA <span className="text-accent">LUCHA</span>.
+              PARA EL <span className="text-accent">COMBATE</span>.
             </h1>
             <p className="mt-8 text-base md:text-lg text-muted-foreground max-w-md leading-relaxed">
               Kimonos, rashguards y shorts diseñados con la precisión que exige el tatami.
