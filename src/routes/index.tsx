@@ -112,12 +112,6 @@ function Index() {
               <div className="absolute top-5 left-5 bg-background/95 backdrop-blur px-3 py-1.5 text-[10px] uppercase tracking-[0.25em] rounded-sm border border-border">
                 Nuevo
               </div>
-              <img
-                src={logo}
-                alt=""
-                aria-hidden="true"
-                className="absolute bottom-5 right-5 h-16 w-auto opacity-90 drop-shadow-[0_4px_12px_rgba(0,0,0,0.35)]"
-              />
             </div>
           </div>
         </div>
