@@ -221,41 +221,54 @@ function Index() {
                 <br />
                 HECHO PARA <span className="text-accent">DURAR</span>.
               </h2>
-              <div className="mt-8 space-y-5 text-muted-foreground leading-relaxed">
+              <div className="mt-8 space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Un kimono no es solo una prenda. Es una herramienta de trabajo. Cada zona tiene
-                  que aguantar agarres, tensión, sudor, lavados y muchas horas de tatami.
+                  Un gi es una herramienta de precisión. Pearl weave de 450&nbsp;gsm con trama estable
+                  pensada para mantener cuerpo, forma y presencia con uso intensivo. Cada zona dimensionada
+                  para las fuerzas reales del combate.
                 </p>
                 <p>
-                  Por eso miramos el gi como se mira una pieza técnica: solapa firme, costuras
-                  reforzadas, tejido estable y puntos de tensión preparados para entrenar fuerte.
+                  Solapa con núcleo EVA de 10&nbsp;mm, costuras de triple puntada en los puntos de mayor
+                  tracción y faldón compatible con reglamento IBJJF que libera la cadera sin tela flotante.
                 </p>
               </div>
 
-              <div className="mt-10 grid sm:grid-cols-3 gap-4">
+              <div className="mt-10 grid sm:grid-cols-2 gap-3">
                 {[
                   {
                     icon: Shield,
-                    title: "Solapa firme",
-                    text: "Estructura pensada para resistir agarres sin perder presencia.",
+                    title: "Solapa",
+                    spec: "Núcleo EVA 10 mm",
+                    text: "Estructura semirrígida que mantiene la forma bajo agarre sostenido sin ceder ni ablandarse.",
                   },
                   {
                     icon: ScanLine,
-                    title: "Costuras clave",
-                    text: "Refuerzos en hombros, axilas y zonas de fricción continua.",
+                    title: "Costuras",
+                    spec: "Triple puntada",
+                    text: "Triple puntada reforzada en hombros, axilas e ingle: las zonas de mayor tracción real.",
                   },
                   {
                     icon: Ruler,
-                    title: "Corte útil",
-                    text: "Movimiento limpio sin exceso de tela ni sensación rígida.",
+                    title: "Gramaje / Trama",
+                    spec: "Pearl weave 450 gsm",
+                    text: "Alta densidad para absorber el impacto sin añadir peso muerto. Estable lavado tras lavado.",
+                  },
+                  {
+                    icon: Award,
+                    title: "Faldón",
+                    spec: "Reglamento IBJJF",
+                    text: "Largo compatible con reglamento y silueta estrecha: movilidad completa de cadera sin tela que se enreda.",
                   },
                 ].map((item) => (
                   <div key={item.title} className="border border-border rounded-md p-4 bg-card">
-                    <item.icon className="h-5 w-5 text-accent" />
-                    <h3 className="mt-4 font-display text-xl tracking-wider text-foreground">
+                    <div className="flex items-center gap-2">
+                      <item.icon className="h-4 w-4 text-accent flex-shrink-0" />
+                      <span className="text-[9px] uppercase tracking-[0.3em] text-accent">{item.spec}</span>
+                    </div>
+                    <h3 className="mt-3 font-display text-lg tracking-wider text-foreground">
                       {item.title}
                     </h3>
-                    <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                    <p className="mt-1.5 text-xs leading-relaxed text-muted-foreground">
                       {item.text}
                     </p>
                   </div>
@@ -273,122 +286,128 @@ function Index() {
                         GI TECH PATTERN
                       </p>
                       <p className="text-[10px] uppercase tracking-[0.25em] text-muted-foreground mt-1">
-                        Despiece técnico del kimono
+                        Plano constructivo — despiece técnico
                       </p>
                     </div>
-                    <p className="hidden sm:block text-[10px] uppercase tracking-[0.25em] text-muted-foreground">
-                      WF-2026
-                    </p>
+                    <div className="text-right hidden sm:block">
+                      <p className="text-[10px] uppercase tracking-[0.25em] text-muted-foreground">WF-2026</p>
+                      <p className="text-[9px] uppercase tracking-[0.2em] text-accent mt-1">450 gsm · Pearl weave</p>
+                    </div>
                   </div>
 
-                  <div className="relative mt-8 aspect-[4/3] min-h-[280px]">
+                  <div className="relative mt-8 aspect-[4/3] min-h-[300px]">
                     <svg
-                      viewBox="0 0 720 520"
-                      className="absolute inset-0 h-full w-full"
+                      viewBox="0 0 720 540"
+                      className="absolute inset-0 h-full w-full text-foreground"
                       role="img"
-                      aria-label="Plano técnico de un kimono desmontado"
+                      aria-label="Plano técnico de un kimono con zonas y especificaciones"
                     >
                       <defs>
-                        <pattern id="stitch" width="8" height="8" patternUnits="userSpaceOnUse">
-                          <path
-                            d="M0 4H8"
-                            stroke="currentColor"
-                            strokeWidth="1"
-                            strokeDasharray="2 3"
-                          />
+                        <pattern id="weave-gi" width="7" height="7" patternUnits="userSpaceOnUse">
+                          <rect x="0" y="0" width="3.5" height="3.5" fill="currentColor" opacity="0.10" />
+                          <rect x="3.5" y="3.5" width="3.5" height="3.5" fill="currentColor" opacity="0.10" />
                         </pattern>
                       </defs>
-                      <g
-                        className="text-foreground"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      >
+
+                      {/* Piezas del gi — base fill + weave texture */}
+                      <g className="text-foreground" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round">
+                        {/* BODY — outline */}
                         <path
-                          d="M314 78 L238 132 L198 252 L242 270 L278 178 L278 392 L442 392 L442 178 L478 270 L522 252 L482 132 L406 78 Z"
-                          strokeWidth="3"
-                          fill="var(--color-background)"
-                        />
-                        <path
-                          d="M338 86 L300 158 L334 230 L360 178 L386 230 L420 158 L382 86"
-                          strokeWidth="2"
-                        />
-                        <path
-                          d="M300 158 L278 392 M420 158 L442 392"
-                          strokeWidth="1.5"
-                          strokeDasharray="6 8"
-                        />
-                        <path
-                          d="M242 270 L198 252 M478 270 L522 252 M278 392 H442"
-                          strokeWidth="5"
-                          opacity="0.18"
-                        />
-                        <path
-                          d="M278 178 L242 270 M442 178 L478 270"
-                          strokeWidth="2"
-                          strokeDasharray="4 7"
-                        />
-                        <path
-                          d="M94 150 L190 112 L220 184 L124 222 Z"
+                          d="M314 76 L238 130 L198 252 L242 270 L278 178 L278 394 L442 394 L442 178 L478 270 L522 252 L482 130 L406 76 Z"
                           strokeWidth="2.5"
                           fill="var(--color-background)"
                         />
+                        {/* BODY — weave texture */}
                         <path
-                          d="M530 112 L626 150 L596 222 L500 184 Z"
-                          strokeWidth="2.5"
-                          fill="var(--color-background)"
+                          d="M314 76 L238 130 L198 252 L242 270 L278 178 L278 394 L442 394 L442 178 L478 270 L522 252 L482 130 L406 76 Z"
+                          strokeWidth="0"
+                          fill="url(#weave-gi)"
+                          className="text-foreground"
                         />
+                        {/* COLLAR / LAPEL */}
                         <path
-                          d="M138 330 L252 330 L234 458 L154 458 Z"
+                          d="M338 84 L300 158 L336 232 L360 180 L384 232 L420 158 L382 84"
                           strokeWidth="2.5"
-                          fill="var(--color-background)"
                         />
-                        <path
-                          d="M468 330 L582 330 L566 458 L486 458 Z"
-                          strokeWidth="2.5"
-                          fill="var(--color-background)"
-                        />
-                        <path d="M154 458 H234 M486 458 H566" strokeWidth="5" opacity="0.18" />
-                        <path d="M360 178 V392" strokeWidth="1.5" strokeDasharray="3 8" />
-                        <circle cx="360" cy="178" r="5" fill="var(--color-accent)" stroke="none" />
-                        <circle cx="278" cy="304" r="5" fill="var(--color-accent)" stroke="none" />
-                        <circle cx="442" cy="304" r="5" fill="var(--color-accent)" stroke="none" />
-                        <circle cx="234" cy="458" r="5" fill="var(--color-accent)" stroke="none" />
+                        {/* center axis */}
+                        <path d="M360 158 V394" strokeWidth="1" strokeDasharray="3 8" opacity="0.35" />
+                        {/* lapel sides — dashed */}
+                        <path d="M300 158 L278 394 M420 158 L442 394" strokeWidth="1.5" strokeDasharray="6 8" opacity="0.6" />
+                        {/* side seams */}
+                        <path d="M278 178 L242 270 M442 178 L478 270" strokeWidth="1.5" strokeDasharray="4 7" />
+                        {/* reinforcement stripes */}
+                        <path d="M242 270 L198 252 M478 270 L522 252 M278 394 H442" strokeWidth="5" opacity="0.14" />
+
+                        {/* LEFT SLEEVE */}
+                        <path d="M94 148 L190 110 L222 186 L126 224 Z" strokeWidth="2.5" fill="var(--color-background)" />
+                        <path d="M94 148 L190 110 L222 186 L126 224 Z" strokeWidth="0" fill="url(#weave-gi)" className="text-foreground" />
+                        {/* RIGHT SLEEVE */}
+                        <path d="M530 110 L626 148 L594 224 L498 186 Z" strokeWidth="2.5" fill="var(--color-background)" />
+                        <path d="M530 110 L626 148 L594 224 L498 186 Z" strokeWidth="0" fill="url(#weave-gi)" className="text-foreground" />
+
+                        {/* LEFT PANT */}
+                        <path d="M136 336 L252 336 L234 462 L152 462 Z" strokeWidth="2.5" fill="var(--color-background)" />
+                        <path d="M136 336 L252 336 L234 462 L152 462 Z" strokeWidth="0" fill="url(#weave-gi)" className="text-foreground" />
+                        {/* RIGHT PANT */}
+                        <path d="M468 336 L584 336 L568 462 L484 462 Z" strokeWidth="2.5" fill="var(--color-background)" />
+                        <path d="M468 336 L584 336 L568 462 L484 462 Z" strokeWidth="0" fill="url(#weave-gi)" className="text-foreground" />
+
+                        {/* hem reinforcements */}
+                        <path d="M152 462 H234 M484 462 H568" strokeWidth="5" opacity="0.14" />
+
+                        {/* callout anchor dots */}
+                        <circle cx="360" cy="158" r="5" fill="var(--color-accent)" stroke="none" />
+                        <circle cx="242" cy="270" r="5" fill="var(--color-accent)" stroke="none" />
+                        <circle cx="478" cy="270" r="5" fill="var(--color-accent)" stroke="none" />
+                        <circle cx="360" cy="310" r="5" fill="var(--color-accent)" stroke="none" />
+                        <circle cx="234" cy="462" r="5" fill="var(--color-accent)" stroke="none" />
                       </g>
+
+                      {/* CALLOUT LABELS */}
                       <g
                         className="text-muted-foreground"
                         fill="currentColor"
-                        fontSize="13"
+                        fontSize="10"
                         fontFamily="Inter, system-ui, sans-serif"
                         letterSpacing="1.5"
                       >
-                        <text x="382" y="174">
-                          SOLAPA REFORZADA
-                        </text>
-                        <path d="M374 170 H520" stroke="currentColor" strokeWidth="1" />
-                        <text x="64" y="282">
-                          MANGAS Y AGARRES
-                        </text>
-                        <path d="M202 276 H278" stroke="currentColor" strokeWidth="1" />
-                        <text x="468" y="304">
-                          COSTURAS DE TENSIÓN
-                        </text>
-                        <path d="M458 300 H442" stroke="currentColor" strokeWidth="1" />
-                        <text x="250" y="486">
-                          BAJOS Y FALDA
-                        </text>
-                        <path d="M242 462 H330" stroke="currentColor" strokeWidth="1" />
+                        {/* SOLAPA */}
+                        <text x="388" y="154">SOLAPA · EVA 10MM</text>
+                        <path d="M383 150 H530" stroke="currentColor" strokeWidth="0.75" opacity="0.45" />
+
+                        {/* GRAMAJE — body center */}
+                        <text x="360" y="326" textAnchor="middle" letterSpacing="1.2">PEARL WEAVE · 450 GSM</text>
+                        <path d="M360 322 V313" stroke="currentColor" strokeWidth="0.75" opacity="0.45" />
+
+                        {/* MANGAS — left */}
+                        <text x="18" y="160">MANGAS ·</text>
+                        <text x="18" y="174">REFUERZO</text>
+                        <path d="M126 196 L88 174" stroke="currentColor" strokeWidth="0.75" opacity="0.45" />
+
+                        {/* COSTURAS — right */}
+                        <text x="492" y="266">COSTURAS ·</text>
+                        <text x="492" y="280">TRIPLE PUNTADA</text>
+                        <path d="M480 270 H491" stroke="currentColor" strokeWidth="0.75" opacity="0.45" />
+
+                        {/* FALDÓN — bottom */}
+                        <text x="256" y="490">FALDÓN · REGLAMENTO IBJJF</text>
+                        <path d="M234 464 V486" stroke="currentColor" strokeWidth="0.75" opacity="0.45" />
                       </g>
                     </svg>
                   </div>
 
-                  <div className="mt-6 grid sm:grid-cols-2 gap-3 text-xs uppercase tracking-[0.2em] text-muted-foreground">
-                    <div className="border border-border bg-background/70 rounded-sm p-3">
-                      Pearl weave estable para uso diario
+                  <div className="mt-6 grid grid-cols-2 sm:grid-cols-4 gap-2 text-[9px] uppercase tracking-[0.2em] text-muted-foreground">
+                    <div className="border border-border bg-background/70 rounded-sm p-3 leading-snug">
+                      Gramaje<br /><span className="text-foreground text-[10px]">450 gsm</span>
                     </div>
-                    <div className="border border-border bg-background/70 rounded-sm p-3">
-                      Refuerzos donde el combate castiga
+                    <div className="border border-border bg-background/70 rounded-sm p-3 leading-snug">
+                      Solapa<br /><span className="text-foreground text-[10px]">EVA 10 mm</span>
+                    </div>
+                    <div className="border border-border bg-background/70 rounded-sm p-3 leading-snug">
+                      Costuras<br /><span className="text-foreground text-[10px]">Triple puntada</span>
+                    </div>
+                    <div className="border border-border bg-background/70 rounded-sm p-3 leading-snug">
+                      Faldón<br /><span className="text-foreground text-[10px]">Regl. IBJJF</span>
                     </div>
                   </div>
                 </div>
