@@ -401,7 +401,7 @@ function Index() {
       {/* BRAND / MANIFESTO */}
       <section className="container mx-auto px-4 md:px-8 py-20 md:py-28">
         <div className="grid md:grid-cols-12 gap-10 md:gap-16 items-center">
-          <div className="md:col-span-5 relative">
+          <div className="md:col-span-5">
             <div className="aspect-[4/5] overflow-hidden rounded-md bg-card">
               <img
                 src={athleteImg}
@@ -410,12 +410,14 @@ function Index() {
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="absolute -bottom-6 -right-2 md:-right-6 bg-background border border-border rounded-md p-5 shadow-[var(--shadow-card)] max-w-[200px]">
-              <Award className="h-5 w-5 text-accent" />
-              <p className="mt-2 font-display text-2xl tracking-wider leading-none">IBJJF</p>
-              <p className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground mt-1">
-                Aprobado competición
-              </p>
+            <div className="mt-4 grid grid-cols-2 gap-4">
+              <div className="border border-border bg-background rounded-md p-4 shadow-[var(--shadow-card)]">
+                <Award className="h-5 w-5 text-accent" />
+                <p className="mt-2 font-display text-2xl tracking-wider leading-none">IBJJF</p>
+                <p className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground mt-1">
+                  Aprobado competición
+                </p>
+              </div>
             </div>
           </div>
 
