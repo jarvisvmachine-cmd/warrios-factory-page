@@ -10,7 +10,7 @@ export function Header() {
           <img
             src={logo}
             alt="Warriors Factory"
-            className="h-11 md:h-12 w-auto transition-transform duration-500 group-hover:rotate-[-6deg]"
+            className="h-11 md:h-12 w-auto"
           />
           <span className="font-display text-xl md:text-2xl tracking-[0.3em] leading-none text-foreground hidden sm:inline">
             WARRIORS
