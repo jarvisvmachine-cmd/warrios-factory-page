@@ -18,6 +18,7 @@ import catGi from "@/assets/cat-gi.jpg";
 import catRash from "@/assets/cat-rashguard.jpg";
 import catShorts from "@/assets/cat-shorts.jpg";
 import catAcc from "@/assets/cat-accessories.jpg";
+import blueprintImg from "@/assets/kimono-blueprint.jpg";
 import { ProductGrid } from "@/components/ProductGrid";
 
 export const Route = createFileRoute("/")({
