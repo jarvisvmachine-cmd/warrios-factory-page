@@ -40,7 +40,9 @@ export function Footer() {
                 className="group relative inline-flex h-11 w-11 items-center justify-center rounded-xl text-white shadow-[0_6px_0_rgba(0,0,0,0.25),0_10px_20px_-6px_rgba(255,0,0,0.55)] transition-all duration-150 active:translate-y-[5px] active:shadow-[0_1px_0_rgba(0,0,0,0.25),0_4px_10px_-4px_rgba(255,0,0,0.45)]"
                 style={{ background: "linear-gradient(180deg,#FF0000 0%,#c40000 100%)" }}
               >
-                <Youtube className="h-5 w-5 fill-white" />
+                <svg viewBox="0 0 24 24" className="h-5 w-5" aria-hidden="true">
+                  <path d="M9.5 8.5v7l6-3.5-6-3.5z" fill="#FF0000" />
+                </svg>
               </a>
             </div>
           </div>
