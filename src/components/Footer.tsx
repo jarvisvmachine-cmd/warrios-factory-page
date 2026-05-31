@@ -18,9 +18,30 @@ export function Footer() {
               Equipamiento técnico para BJJ y grappling. Diseñado desde el tatami, probado en entrenamiento duro.
             </p>
             <div className="flex gap-4 mt-6">
-              <a href="#" aria-label="Instagram" className="text-muted-foreground hover:text-foreground transition-colors"><Instagram className="h-5 w-5" /></a>
-              <a href="#" aria-label="Facebook" className="text-muted-foreground hover:text-foreground transition-colors"><Facebook className="h-5 w-5" /></a>
-              <a href="#" aria-label="YouTube" className="text-muted-foreground hover:text-foreground transition-colors"><Youtube className="h-5 w-5" /></a>
+              <a
+                href="#"
+                aria-label="Instagram"
+                className="group relative inline-flex h-11 w-11 items-center justify-center rounded-xl text-white shadow-[0_6px_0_rgba(0,0,0,0.25),0_10px_20px_-6px_rgba(220,80,140,0.55)] transition-all duration-150 active:translate-y-[5px] active:shadow-[0_1px_0_rgba(0,0,0,0.25),0_4px_10px_-4px_rgba(220,80,140,0.45)]"
+                style={{ background: "linear-gradient(135deg,#f58529 0%,#dd2a7b 45%,#8134af 80%,#515bd4 100%)" }}
+              >
+                <Instagram className="h-5 w-5" />
+              </a>
+              <a
+                href="#"
+                aria-label="Facebook"
+                className="group relative inline-flex h-11 w-11 items-center justify-center rounded-xl text-white shadow-[0_6px_0_rgba(0,0,0,0.25),0_10px_20px_-6px_rgba(24,119,242,0.55)] transition-all duration-150 active:translate-y-[5px] active:shadow-[0_1px_0_rgba(0,0,0,0.25),0_4px_10px_-4px_rgba(24,119,242,0.45)]"
+                style={{ background: "linear-gradient(180deg,#1877F2 0%,#0b5fd1 100%)" }}
+              >
+                <Facebook className="h-5 w-5 fill-white" />
+              </a>
+              <a
+                href="#"
+                aria-label="YouTube"
+                className="group relative inline-flex h-11 w-11 items-center justify-center rounded-xl text-white shadow-[0_6px_0_rgba(0,0,0,0.25),0_10px_20px_-6px_rgba(255,0,0,0.55)] transition-all duration-150 active:translate-y-[5px] active:shadow-[0_1px_0_rgba(0,0,0,0.25),0_4px_10px_-4px_rgba(255,0,0,0.45)]"
+                style={{ background: "linear-gradient(180deg,#FF0000 0%,#c40000 100%)" }}
+              >
+                <Youtube className="h-5 w-5 fill-white" />
+              </a>
             </div>
           </div>
 
