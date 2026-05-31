@@ -41,7 +41,7 @@ export function Footer() {
                 style={{ background: "linear-gradient(180deg,#FF0000 0%,#c40000 100%)" }}
               >
                 <svg viewBox="0 0 24 24" className="h-5 w-5" aria-hidden="true">
-                  <path d="M9.5 8.5v7l6-3.5-6-3.5z" fill="#FF0000" />
+                  <path d="M9.5 8.5v7l6-3.5-6-3.5z" fill="#ffffff" />
                 </svg>
               </a>
             </div>
