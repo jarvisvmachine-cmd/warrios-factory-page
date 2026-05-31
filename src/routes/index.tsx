@@ -18,6 +18,7 @@ import catGi from "@/assets/cat-gi.jpg";
 import catRash from "@/assets/cat-rashguard.jpg";
 import catShorts from "@/assets/cat-shorts.jpg";
 import catAcc from "@/assets/cat-accessories.jpg";
+import blueprintImg from "@/assets/kimono-blueprint.jpg";
 import { ProductGrid } from "@/components/ProductGrid";
 
 export const Route = createFileRoute("/")({
@@ -290,104 +291,12 @@ function Index() {
                   </div>
 
                   <div className="relative mt-8 aspect-[4/3] min-h-[300px]">
-                    <svg
-                      viewBox="0 0 720 540"
-                      className="absolute inset-0 h-full w-full text-foreground"
-                      role="img"
-                      aria-label="Plano técnico de un kimono con zonas y especificaciones"
-                    >
-                      <defs>
-                        <pattern id="weave-gi" width="7" height="7" patternUnits="userSpaceOnUse">
-                          <rect x="0" y="0" width="3.5" height="3.5" fill="currentColor" opacity="0.10" />
-                          <rect x="3.5" y="3.5" width="3.5" height="3.5" fill="currentColor" opacity="0.10" />
-                        </pattern>
-                      </defs>
-
-                      {/* Piezas del gi — base fill + weave texture */}
-                      <g className="text-foreground" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round">
-                        {/* BODY — outline */}
-                        <path
-                          d="M314 76 L238 130 L198 252 L242 270 L278 178 L278 394 L442 394 L442 178 L478 270 L522 252 L482 130 L406 76 Z"
-                          strokeWidth="2.5"
-                          fill="var(--color-background)"
-                        />
-                        {/* BODY — weave texture */}
-                        <path
-                          d="M314 76 L238 130 L198 252 L242 270 L278 178 L278 394 L442 394 L442 178 L478 270 L522 252 L482 130 L406 76 Z"
-                          strokeWidth="0"
-                          fill="url(#weave-gi)"
-                          className="text-foreground"
-                        />
-                        {/* COLLAR / LAPEL */}
-                        <path
-                          d="M338 84 L300 158 L336 232 L360 180 L384 232 L420 158 L382 84"
-                          strokeWidth="2.5"
-                        />
-                        {/* center axis */}
-                        <path d="M360 158 V394" strokeWidth="1" strokeDasharray="3 8" opacity="0.35" />
-                        {/* lapel sides — dashed */}
-                        <path d="M300 158 L278 394 M420 158 L442 394" strokeWidth="1.5" strokeDasharray="6 8" opacity="0.6" />
-                        {/* side seams */}
-                        <path d="M278 178 L242 270 M442 178 L478 270" strokeWidth="1.5" strokeDasharray="4 7" />
-                        {/* reinforcement stripes */}
-                        <path d="M242 270 L198 252 M478 270 L522 252 M278 394 H442" strokeWidth="5" opacity="0.14" />
-
-                        {/* LEFT SLEEVE */}
-                        <path d="M94 148 L190 110 L222 186 L126 224 Z" strokeWidth="2.5" fill="var(--color-background)" />
-                        <path d="M94 148 L190 110 L222 186 L126 224 Z" strokeWidth="0" fill="url(#weave-gi)" className="text-foreground" />
-                        {/* RIGHT SLEEVE */}
-                        <path d="M530 110 L626 148 L594 224 L498 186 Z" strokeWidth="2.5" fill="var(--color-background)" />
-                        <path d="M530 110 L626 148 L594 224 L498 186 Z" strokeWidth="0" fill="url(#weave-gi)" className="text-foreground" />
-
-                        {/* LEFT PANT */}
-                        <path d="M136 336 L252 336 L234 462 L152 462 Z" strokeWidth="2.5" fill="var(--color-background)" />
-                        <path d="M136 336 L252 336 L234 462 L152 462 Z" strokeWidth="0" fill="url(#weave-gi)" className="text-foreground" />
-                        {/* RIGHT PANT */}
-                        <path d="M468 336 L584 336 L568 462 L484 462 Z" strokeWidth="2.5" fill="var(--color-background)" />
-                        <path d="M468 336 L584 336 L568 462 L484 462 Z" strokeWidth="0" fill="url(#weave-gi)" className="text-foreground" />
-
-                        {/* hem reinforcements */}
-                        <path d="M152 462 H234 M484 462 H568" strokeWidth="5" opacity="0.14" />
-
-                        {/* callout anchor dots */}
-                        <circle cx="360" cy="158" r="5" fill="var(--color-accent)" stroke="none" />
-                        <circle cx="242" cy="270" r="5" fill="var(--color-accent)" stroke="none" />
-                        <circle cx="478" cy="270" r="5" fill="var(--color-accent)" stroke="none" />
-                        <circle cx="360" cy="310" r="5" fill="var(--color-accent)" stroke="none" />
-                        <circle cx="234" cy="462" r="5" fill="var(--color-accent)" stroke="none" />
-                      </g>
-
-                      {/* CALLOUT LABELS */}
-                      <g
-                        className="text-muted-foreground"
-                        fill="currentColor"
-                        fontSize="10"
-                        fontFamily="Inter, system-ui, sans-serif"
-                        letterSpacing="1.5"
-                      >
-                        {/* SOLAPA */}
-                        <text x="388" y="154">SOLAPA · EVA 10MM</text>
-                        <path d="M383 150 H530" stroke="currentColor" strokeWidth="0.75" opacity="0.45" />
-
-                        {/* GRAMAJE — body center */}
-                        <text x="360" y="326" textAnchor="middle" letterSpacing="1.2">PEARL WEAVE · 450 GSM</text>
-                        <path d="M360 322 V313" stroke="currentColor" strokeWidth="0.75" opacity="0.45" />
-
-                        {/* MANGAS — left */}
-                        <text x="18" y="160">MANGAS ·</text>
-                        <text x="18" y="174">REFUERZO</text>
-                        <path d="M126 196 L88 174" stroke="currentColor" strokeWidth="0.75" opacity="0.45" />
-
-                        {/* COSTURAS — right */}
-                        <text x="492" y="266">COSTURAS ·</text>
-                        <text x="492" y="280">TRIPLE PUNTADA</text>
-                        <path d="M480 270 H491" stroke="currentColor" strokeWidth="0.75" opacity="0.45" />
-
-                        {/* FALDÓN — bottom */}
-                        <text x="256" y="490">FALDÓN · REGLAMENTO IBJJF</text>
-                        <path d="M234 464 V486" stroke="currentColor" strokeWidth="0.75" opacity="0.45" />
-                      </g>
-                    </svg>
+                    <img
+                      src={blueprintImg}
+                      alt="Plano técnico de costura de un kimono BJJ (estilo blueprint) con despiece de chaqueta y pantalón"
+                      className="absolute inset-0 h-full w-full object-contain"
+                      loading="lazy"
+                    />
                   </div>
 
                   <div className="mt-6 grid grid-cols-2 sm:grid-cols-4 gap-2 text-[9px] uppercase tracking-[0.2em] text-muted-foreground">
