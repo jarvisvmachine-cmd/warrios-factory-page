@@ -89,8 +89,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:site", content: "@Lovable" },
       { name: "twitter:title", content: "Warriors Factory — Kimonos y equipamiento de Brazilian Jiu-Jitsu" },
       { name: "twitter:description", content: "Kimonos de BJJ, rashguards, shorts de lucha y equipamiento técnico para guerreros del tatami." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/2f3a0c25-cbe5-4b81-8c25-635b21f6d1fd/id-preview-73130ed6--87056ec1-8c5a-40ad-9838-187eb5129e22.lovable.app-1780079797423.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/2f3a0c25-cbe5-4b81-8c25-635b21f6d1fd/id-preview-73130ed6--87056ec1-8c5a-40ad-9838-187eb5129e22.lovable.app-1780079797423.png" },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/CT7dlju8jSWqfguaaY9cDB2XLHJ3/social-images/social-1780219622632-Monos_2.webp" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/CT7dlju8jSWqfguaaY9cDB2XLHJ3/social-images/social-1780219622632-Monos_2.webp" },
     ],
     links: [
       {
