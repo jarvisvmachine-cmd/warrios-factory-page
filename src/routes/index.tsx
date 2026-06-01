@@ -18,6 +18,7 @@ import catGi from "@/assets/cat-gi.jpg";
 import catRash from "@/assets/cat-rashguard.jpg";
 import catShorts from "@/assets/cat-shorts.jpg";
 import catAcc from "@/assets/cat-accessories.jpg";
+import catCasual from "@/assets/cat-casual.png.asset.json";
 import blueprintImg from "@/assets/kimono-blueprint.jpg";
 import { ProductGrid } from "@/components/ProductGrid";
 
@@ -147,12 +148,13 @@ function Index() {
           </Link>
         </div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+        <div className="grid grid-cols-2 lg:grid-cols-5 gap-4 md:gap-6">
           {[
             { label: "Kimonos", sub: "Gi", img: catGi },
             { label: "Rashguards", sub: "Licras", img: catRash },
             { label: "Shorts", sub: "Fight", img: catShorts },
             { label: "Accesorios", sub: "Cinturones", img: catAcc },
+            { label: "Casual", sub: "Streetwear", img: catCasual.url },
           ].map((c) => (
             <Link
               key={c.label}
