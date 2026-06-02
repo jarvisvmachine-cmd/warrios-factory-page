@@ -16,7 +16,7 @@ import athleteImg from "@/assets/brand-athlete.jpg";
 import logo from "@/assets/warriors-logo.png";
 import catGi from "@/assets/cat-gi.png.asset.json";
 import catRash from "@/assets/cat-rashguard.png.asset.json";
-import catShorts from "@/assets/cat-shorts.jpg";
+import catShorts from "@/assets/cat-shorts.png.asset.json";
 import catAcc from "@/assets/cat-accessories.png.asset.json";
 import catCasual from "@/assets/cat-casual.png.asset.json";
 import blueprintImg from "@/assets/kimono-blueprint.jpg";
@@ -152,7 +152,7 @@ function Index() {
           {[
             { label: "Kimonos", sub: "Gi", img: catGi.url },
             { label: "Rashguards", sub: "Licras", img: catRash.url },
-            { label: "Shorts", sub: "Fight", img: catShorts },
+            { label: "Shorts", sub: "Fight", img: catShorts.url },
             { label: "Accesorios", sub: "Cinturones", img: catAcc.url },
             { label: "Casual", sub: "Streetwear", img: catCasual.url },
           ].map((c) => (
