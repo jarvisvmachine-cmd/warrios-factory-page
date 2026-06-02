@@ -15,7 +15,7 @@ import heroImg from "@/assets/hero-bjj.jpg";
 import athleteImg from "@/assets/brand-athlete.jpg";
 import logo from "@/assets/warriors-logo.png";
 import catGi from "@/assets/cat-gi.png.asset.json";
-import catRash from "@/assets/cat-rashguard.jpg";
+import catRash from "@/assets/cat-rashguard.png.asset.json";
 import catShorts from "@/assets/cat-shorts.jpg";
 import catAcc from "@/assets/cat-accessories.png.asset.json";
 import catCasual from "@/assets/cat-casual.png.asset.json";
@@ -151,7 +151,7 @@ function Index() {
         <div className="grid grid-cols-2 lg:grid-cols-5 gap-4 md:gap-6">
           {[
             { label: "Kimonos", sub: "Gi", img: catGi.url },
-            { label: "Rashguards", sub: "Licras", img: catRash },
+            { label: "Rashguards", sub: "Licras", img: catRash.url },
             { label: "Shorts", sub: "Fight", img: catShorts },
             { label: "Accesorios", sub: "Cinturones", img: catAcc.url },
             { label: "Casual", sub: "Streetwear", img: catCasual.url },
