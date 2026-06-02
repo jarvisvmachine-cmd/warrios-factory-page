@@ -17,7 +17,7 @@ import logo from "@/assets/warriors-logo.png";
 import catGi from "@/assets/cat-gi.jpg";
 import catRash from "@/assets/cat-rashguard.jpg";
 import catShorts from "@/assets/cat-shorts.jpg";
-import catAcc from "@/assets/cat-accessories.jpg";
+import catAcc from "@/assets/cat-accessories.png.asset.json";
 import catCasual from "@/assets/cat-casual.png.asset.json";
 import blueprintImg from "@/assets/kimono-blueprint.jpg";
 import { ProductGrid } from "@/components/ProductGrid";
@@ -153,7 +153,7 @@ function Index() {
             { label: "Kimonos", sub: "Gi", img: catGi },
             { label: "Rashguards", sub: "Licras", img: catRash },
             { label: "Shorts", sub: "Fight", img: catShorts },
-            { label: "Accesorios", sub: "Cinturones", img: catAcc },
+            { label: "Accesorios", sub: "Cinturones", img: catAcc.url },
             { label: "Casual", sub: "Streetwear", img: catCasual.url },
           ].map((c) => (
             <Link
