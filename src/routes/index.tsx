@@ -67,7 +67,7 @@ function Index() {
             </h1>
             <p className="mt-8 text-base md:text-lg text-muted-foreground max-w-md leading-relaxed">
               Kimonos, rashguards y shorts pensados para entrenar duro, competir y aguantar lavados,
-              agarres y rounds de verdad. Materiales serios, ajuste cómodo y estética limpia.
+              agarres y entrenos de verdad. Materiales de alta calidad, ajuste cómodo y estética limpia.
             </p>
             <div className="mt-10 flex flex-wrap gap-3">
               <Button
