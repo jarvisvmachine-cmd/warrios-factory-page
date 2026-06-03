@@ -19,6 +19,7 @@ import catShorts from "@/assets/cat-shorts.png.asset.json";
 import catAcc from "@/assets/cat-accessories.png.asset.json";
 import catCasual from "@/assets/cat-casual.png.asset.json";
 import blueprintImg from "@/assets/kimono-blueprint.jpg";
+import gorillaGi from "@/assets/gorilla-gi.png.asset.json";
 import { ProductGrid } from "@/components/ProductGrid";
 
 export const Route = createFileRoute("/")({
@@ -273,6 +274,7 @@ function Index() {
             </div>
 
             <div className="lg:col-span-7">
+              <div className="space-y-6">
               <div className="relative overflow-hidden rounded-md border border-border bg-card p-5 md:p-8 shadow-[var(--shadow-card)]">
                 <div className="absolute inset-0 opacity-[0.08] [background-image:linear-gradient(var(--color-foreground)_1px,transparent_1px),linear-gradient(90deg,var(--color-foreground)_1px,transparent_1px)] [background-size:28px_28px]" />
                 <div className="relative">
@@ -315,6 +317,15 @@ function Index() {
                     </div>
                   </div>
                 </div>
+              </div>
+              <div className="relative overflow-hidden rounded-md border border-border bg-card aspect-[3/2]">
+                <img
+                  src={gorillaGi.url}
+                  alt="Kimono Warriors Factory: detalles, tejido y refuerzos"
+                  loading="lazy"
+                  className="absolute inset-0 h-full w-full object-cover"
+                />
+              </div>
               </div>
             </div>
           </div>
