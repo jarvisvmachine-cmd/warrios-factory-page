@@ -183,7 +183,7 @@ function Index() {
       </section>
 
       {/* FEATURED PRODUCTS */}
-      <section className="border-t border-border bg-card mt-32 bg-slate-800">
+      <section className="border-t border-border bg-card mt-32 bg-gray-600">
         <div className="container mx-auto px-4 md:px-8 py-20 md:py-28">
           <div className="flex items-end justify-between mb-10 md:mb-14">
             <div>
