@@ -12,7 +12,6 @@ import {
   ScanLine,
 } from "lucide-react";
 import heroImg from "@/assets/hero-bjj.jpg";
-import athleteImg from "@/assets/brand-athlete.jpg";
 import logo from "@/assets/warriors-logo.png";
 import catGi from "@/assets/cat-gi.png.asset.json";
 import catRash from "@/assets/cat-rashguard.png.asset.json";
