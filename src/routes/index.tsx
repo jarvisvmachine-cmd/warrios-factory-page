@@ -19,6 +19,7 @@ import catShorts from "@/assets/cat-shorts.png.asset.json";
 import catAcc from "@/assets/cat-accessories.png.asset.json";
 import catCasual from "@/assets/cat-casual.png.asset.json";
 import blueprintImg from "@/assets/kimono-blueprint.jpg";
+import gorillaGi from "@/assets/gorilla-gi.png.asset.json";
 import { ProductGrid } from "@/components/ProductGrid";
 
 export const Route = createFileRoute("/")({
