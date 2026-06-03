@@ -337,7 +337,7 @@ function Index() {
         <div className="container mx-auto px-4 md:px-8 py-16 md:py-20 grid md:grid-cols-12 gap-8 items-center">
           <div className="md:col-span-8">
             <p className="text-[11px] uppercase tracking-[0.3em] text-background/60 mb-3">
-              Únete al dojo
+              <br />
             </p>
             <h2 className="font-display text-4xl md:text-5xl tracking-wider leading-tight">
               EQUÍPATE PARA ENTRENAR COMO COMPITES.
