@@ -35,14 +35,18 @@ export function CartDrawer() {
   return (
     <Sheet open={isOpen} onOpenChange={setIsOpen}>
       <SheetTrigger asChild>
-        <Button variant="ghost" size="icon" className="relative text-foreground hover:text-primary">
-          <ShoppingBag className="h-5 w-5" />
+        <button
+          type="button"
+          aria-label="Abrir carrito"
+          className="group relative inline-flex h-11 w-11 items-center justify-center rounded-full border border-border bg-gradient-to-b from-background to-secondary/60 text-foreground shadow-[0_1px_0_rgba(255,255,255,0.6)_inset,0_6px_16px_-6px_rgba(0,0,0,0.25)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_1px_0_rgba(255,255,255,0.6)_inset,0_10px_22px_-6px_rgba(0,0,0,0.3)] hover:text-primary active:translate-y-0 active:shadow-[0_1px_0_rgba(255,255,255,0.6)_inset,0_4px_10px_-6px_rgba(0,0,0,0.25)]"
+        >
+          <ShoppingBag className="h-[18px] w-[18px] transition-transform duration-300 group-hover:scale-110" />
           {totalItems > 0 && (
-            <Badge className="absolute -top-1 -right-1 h-5 min-w-5 rounded-full p-0 flex items-center justify-center text-xs bg-primary text-primary-foreground">
+            <span className="absolute -top-1 -right-1 flex h-5 min-w-5 items-center justify-center rounded-full bg-primary px-1 text-[10px] font-semibold text-primary-foreground shadow-[0_2px_6px_-1px_rgba(0,0,0,0.35)] ring-2 ring-background">
               {totalItems}
-            </Badge>
+            </span>
           )}
-        </Button>
+        </button>
       </SheetTrigger>
       <SheetContent className="w-full sm:max-w-lg flex flex-col h-full bg-card border-border">
         <SheetHeader className="flex-shrink-0">
