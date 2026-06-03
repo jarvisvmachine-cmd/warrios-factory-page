@@ -332,34 +332,6 @@ function Index() {
         </div>
       </section>
 
-      {/* CTA BAND */}
-      <section className="bg-foreground text-background">
-        <div className="container mx-auto px-4 md:px-8 py-16 md:py-20 grid md:grid-cols-12 gap-8 items-center">
-          <div className="md:col-span-8">
-            <p className="text-[11px] uppercase tracking-[0.3em] text-background/60 mb-3">
-              <br />
-            </p>
-            <h2 className="font-display text-4xl md:text-5xl tracking-wider leading-tight">
-              EQUÍPATE PARA ENTRENAR COMO COMPITES.
-            </h2>
-            <p className="mt-4 text-background/70 max-w-xl">
-              Piezas técnicas para BJJ, grappling y entrenamiento diario. Sin adornos inútiles:
-              ajuste, resistencia y presencia.
-            </p>
-          </div>
-          <div className="md:col-span-4 flex md:justify-end">
-            <Button
-              asChild
-              size="lg"
-              className="bg-background text-foreground hover:bg-background/90 uppercase tracking-[0.2em] text-xs rounded-sm h-12 px-8 w-full md:w-auto"
-            >
-              <Link to="/products">
-                Empieza ahora <ArrowRight className="ml-2 h-4 w-4" />
-              </Link>
-            </Button>
-          </div>
-        </div>
-      </section>
     </div>
   );
 }
