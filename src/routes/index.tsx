@@ -11,6 +11,9 @@ import {
   Shield,
   ScanLine,
 } from "lucide-react";
+import { useState } from "react";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
 import heroImg from "@/assets/hero-bjj.jpg";
 import logo from "@/assets/warriors-logo.png";
 import catGi from "@/assets/cat-gi.png.asset.json";
@@ -332,6 +335,79 @@ function Index() {
         </div>
       </section>
 
+      {/* CONTACT */}
+      <section className="border-t border-border bg-card">
+        <div className="container mx-auto px-4 md:px-8 py-20 md:py-28">
+          <p className="text-[11px] uppercase tracking-[0.3em] text-muted-foreground mb-3">
+            Contacto
+          </p>
+          <h2 className="font-display text-4xl md:text-5xl tracking-wider text-foreground">
+            ¿HABLAMOS?
+          </h2>
+          <p className="mt-6 text-muted-foreground max-w-xl leading-relaxed">
+            Dudas de tallaje, pedidos, cambios o colaboraciones. Escríbenos y te contestamos a
+            <span className="text-foreground"> info@warriorsfactory.com</span>.
+          </p>
+          <ContactForm />
+        </div>
+      </section>
+
     </div>
+  );
+}
+
+function ContactForm() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    const subject = encodeURIComponent(`Contacto web — ${name}`);
+    const body = encodeURIComponent(
+      `Nombre: ${name}\nEmail: ${email}\n\n${message}`
+    );
+    window.location.href = `mailto:info@warriorsfactory.com?subject=${subject}&body=${body}`;
+  };
+
+  return (
+    <form onSubmit={handleSubmit} className="mt-10 grid gap-4 max-w-2xl">
+      <div className="grid sm:grid-cols-2 gap-4">
+        <Input
+          required
+          maxLength={100}
+          placeholder="Nombre"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          className="h-12 rounded-sm bg-background"
+        />
+        <Input
+          required
+          type="email"
+          maxLength={255}
+          placeholder="Email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          className="h-12 rounded-sm bg-background"
+        />
+      </div>
+      <Textarea
+        required
+        maxLength={1000}
+        placeholder="Cuéntanos en qué podemos ayudarte (tallaje, pedido, colaboración...)"
+        value={message}
+        onChange={(e) => setMessage(e.target.value)}
+        className="min-h-[140px] rounded-sm bg-background"
+      />
+      <div>
+        <Button
+          type="submit"
+          size="lg"
+          className="bg-foreground text-background hover:bg-foreground/90 uppercase tracking-[0.2em] text-xs rounded-sm h-12 px-8"
+        >
+          Enviar mensaje <ArrowRight className="ml-2 h-4 w-4" />
+        </Button>
+      </div>
+    </form>
   );
 }
