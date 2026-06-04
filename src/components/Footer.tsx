@@ -71,7 +71,7 @@ export function Footer() {
         </div>
 
         <div className="mt-12 pt-8 border-t border-border text-xs text-muted-foreground flex justify-between">
-          <span>© {new Date().getFullYear()} Warriors Factory. Todos los derechos reservados.</span>
+          <span>© 2015 Warriors Factory. Todos los derechos reservados.</span>
           <span className="uppercase tracking-widest">Oss.</span>
         </div>
       </div>
