@@ -335,6 +335,23 @@ function Index() {
         </div>
       </section>
 
+      {/* CONTACT */}
+      <section className="border-t border-border bg-card">
+        <div className="container mx-auto px-4 md:px-8 py-20 md:py-28">
+          <p className="text-[11px] uppercase tracking-[0.3em] text-muted-foreground mb-3">
+            Contacto
+          </p>
+          <h2 className="font-display text-4xl md:text-5xl tracking-wider text-foreground">
+            ¿HABLAMOS?
+          </h2>
+          <p className="mt-6 text-muted-foreground max-w-xl leading-relaxed">
+            Dudas de tallaje, pedidos, cambios o colaboraciones. Escríbenos y te contestamos a
+            <span className="text-foreground"> info@warriorsfactory.com</span>.
+          </p>
+          <ContactForm />
+        </div>
+      </section>
+
     </div>
   );
 }
