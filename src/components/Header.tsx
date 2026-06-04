@@ -14,7 +14,7 @@ export function Header() {
           />
           <span className="font-display text-xl md:text-2xl tracking-[0.3em] leading-none text-foreground hidden sm:inline">
             WARRIORS
-            <span className="block tracking-[0.5em] text-muted-foreground mt-1 text-2xl">FACTORY</span>
+            <span className="block tracking-[0.5em] text-muted-foreground mt-1 text-base">FACTORY</span>
           </span>
         </Link>
 
