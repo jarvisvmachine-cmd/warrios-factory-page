@@ -9,7 +9,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { ShoppingBag, Minus, Plus, Trash2, ExternalLink, Loader2 } from "lucide-react";
+import { ShoppingBag, ShoppingCart, Minus, Plus, Trash2, ExternalLink, Loader2 } from "lucide-react";
 import { useCartStore } from "@/stores/cartStore";
 
 export function CartDrawer() {
@@ -38,14 +38,31 @@ export function CartDrawer() {
         <button
           type="button"
           aria-label="Abrir carrito"
-          className="group relative inline-flex h-11 w-11 items-center justify-center rounded-full border border-border bg-gradient-to-b from-background to-secondary/60 text-foreground shadow-[0_1px_0_rgba(255,255,255,0.6)_inset,0_6px_16px_-6px_rgba(0,0,0,0.25)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_1px_0_rgba(255,255,255,0.6)_inset,0_10px_22px_-6px_rgba(0,0,0,0.3)] hover:text-primary active:translate-y-0 active:shadow-[0_1px_0_rgba(255,255,255,0.6)_inset,0_4px_10px_-6px_rgba(0,0,0,0.25)]"
+          className="group relative inline-flex h-12 w-12 items-center justify-center rounded-full border border-border/80 bg-background text-foreground shadow-[0_4px_12px_rgba(0,0,0,0.08),inset_0_-2px_4px_rgba(0,0,0,0.05),inset_0_2px_4px_rgba(255,255,255,0.9)] transition-all duration-200 active:translate-y-0.5 active:shadow-inner"
         >
-          <ShoppingBag className="h-[18px] w-[18px] transition-transform duration-300 group-hover:scale-110" />
           {totalItems > 0 && (
-            <span className="absolute -top-1 -right-1 flex h-5 min-w-5 items-center justify-center rounded-full bg-primary px-1 text-[10px] font-semibold text-primary-foreground shadow-[0_2px_6px_-1px_rgba(0,0,0,0.35)] ring-2 ring-background">
+            <span
+              aria-hidden="true"
+              className="pointer-events-none absolute inset-[-8px] rounded-full bg-primary/15 blur-xl animate-pulse"
+            />
+          )}
+          <span
+            aria-hidden="true"
+            className="pointer-events-none absolute inset-0 rounded-full border-t border-white/60"
+          />
+          <ShoppingCart
+            className="h-5 w-5 text-foreground transition-all duration-300 group-hover:text-primary group-hover:scale-105"
+            strokeWidth={2.5}
+          />
+          {totalItems > 0 && (
+            <span className="absolute -top-1.5 -right-1.5 flex h-5 min-w-5 items-center justify-center rounded-full bg-primary px-1 text-[10px] font-black text-primary-foreground ring-2 ring-background shadow-[0_2px_5px_rgba(227,30,36,0.4)] transition-transform group-hover:scale-110">
               {totalItems}
             </span>
           )}
+          <span
+            aria-hidden="true"
+            className="pointer-events-none absolute -bottom-1 left-1/2 h-1 w-8 -translate-x-1/2 rounded-full bg-black/5 blur-sm"
+          />
         </button>
       </SheetTrigger>
       <SheetContent className="w-full sm:max-w-lg flex flex-col h-full bg-card border-border">
