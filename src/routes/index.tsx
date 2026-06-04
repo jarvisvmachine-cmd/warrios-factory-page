@@ -11,6 +11,9 @@ import {
   Shield,
   ScanLine,
 } from "lucide-react";
+import { useState } from "react";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
 import heroImg from "@/assets/hero-bjj.jpg";
 import logo from "@/assets/warriors-logo.png";
 import catGi from "@/assets/cat-gi.png.asset.json";
