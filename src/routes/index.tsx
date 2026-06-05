@@ -11,10 +11,11 @@ import {
   Shield,
   ScanLine,
 } from "lucide-react";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import heroImg from "@/assets/hero-bjj.jpg";
+import heroVideo from "@/assets/hero-wf.mp4.asset.json";
 import logo from "@/assets/warriors-logo.png";
 import catGi from "@/assets/cat-gi.png.asset.json";
 import catRash from "@/assets/cat-rashguard.png.asset.json";
@@ -107,13 +108,7 @@ function Index() {
 
           <div className="md:col-span-6 lg:col-span-7 order-1 md:order-2 relative">
             <div className="relative aspect-[4/5] md:aspect-[5/6] overflow-hidden rounded-md bg-background shadow-[var(--shadow-elegant)]">
-              <img
-                src={heroImg}
-                alt="Kimono BJJ blanco con cinturón negro"
-                width={1254}
-                height={1254}
-                className="absolute inset-0 h-full w-full object-cover"
-              />
+              <HeroVideo />
               <div className="absolute top-5 left-5 bg-background/95 backdrop-blur px-3 py-1.5 text-[10px] uppercase tracking-[0.25em] rounded-sm border border-border">
                 Nuevo
               </div>
@@ -353,6 +348,38 @@ function Index() {
       </section>
 
     </div>
+  );
+}
+
+function HeroVideo() {
+  const ref = useRef<HTMLVideoElement>(null);
+  useEffect(() => {
+    const v = ref.current;
+    if (!v) return;
+    const io = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          v.play().catch(() => {});
+        } else {
+          v.pause();
+        }
+      },
+      { threshold: 0.25 }
+    );
+    io.observe(v);
+    return () => io.disconnect();
+  }, []);
+  return (
+    <video
+      ref={ref}
+      src={heroVideo.url}
+      poster={heroImg}
+      muted
+      loop
+      playsInline
+      preload="metadata"
+      className="absolute inset-0 h-full w-full object-cover"
+    />
   );
 }
 
