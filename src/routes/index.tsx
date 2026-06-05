@@ -108,13 +108,7 @@ function Index() {
 
           <div className="md:col-span-6 lg:col-span-7 order-1 md:order-2 relative">
             <div className="relative aspect-[4/5] md:aspect-[5/6] overflow-hidden rounded-md bg-background shadow-[var(--shadow-elegant)]">
-              <img
-                src={heroImg}
-                alt="Kimono BJJ blanco con cinturón negro"
-                width={1254}
-                height={1254}
-                className="absolute inset-0 h-full w-full object-cover"
-              />
+              <HeroVideo />
               <div className="absolute top-5 left-5 bg-background/95 backdrop-blur px-3 py-1.5 text-[10px] uppercase tracking-[0.25em] rounded-sm border border-border">
                 Nuevo
               </div>
